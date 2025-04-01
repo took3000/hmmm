@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>韩漫最新网址</title>
+    <style>
+        :root {
+            --background-color: #f3f5f8;
+            --item-background: linear-gradient(180deg, #f3f5f8, #fff);
+            --text-primary: #2a2f36;
+            --text-secondary: #6c7a89;
+            --accent-color: #052e71;
+            --success-color: #07C160;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: var(--background-color);
+            padding: 20px;
+        }
+
+        .neumorphic-card {
+            background: var(--item-background);
+            border: 2px solid #fff;
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(55, 99, 170, 0.1),
+                       -8px -8px 20px #fff;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease-out;
+            padding: 30px;
+            margin: 80px auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .countdown {
+            font-size: 48px;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(82, 101, 143, 0.1);
+        }
+
+        .tip-text {
+            color: var(--text-secondary);
+            color: red;
+            font-size: 14px; font-weight: 600;
+            line-height: 1.6;
+            margin: 8px 0;
+        }
+
+        .url-display {
+            font-size: 12px;
+            color: var(--accent-color);
+            word-break: break-all;
+            margin: 4px 0;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            color: var(--text-secondary);
+            font-size: 10px;
+            text-align: center;
+            line-height: 1.5;
+            padding: 0px;
+            z-index: 1;margin: 0 auto 0px;
+        }
+
+        @media (max-width: 600px) {
+            .neumorphic-card {
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .countdown {
+                font-size: 36px;
+            }
+        }
+
+        /* 图片样式 */
+        .fixed-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -2;
+            object-fit: cover;
+            opacity: 1; /* 调整透明度 */
+        }
+        .fixed-imagex {
+            position: fixed;
+            bottom: -160px;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+            opacity: 0.2; /* 调整透明度 */
+        }
+
+        .enter-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 10px 12px;
+        }
+        .transparent-button {
+            background-color: rgba(5, 46, 113, 0.22);
+            color: var(--accent-color);
+        }
+        .new-card {
+            background: #fff;
+            border: 2px solid #fff;
+            border-radius: 12px;
+            box-shadow: 8px 8px 20px rgba(55, 99, 170, 0.1),
+                       -8px -8px 20px #fff;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease-out;
+            padding: 20px;
+            display: block;
+            margin: 0 auto 80px;
+            position: relative;
+            z-index: 1;
+        }
+        .new-card .text-container {
+            margin-bottom: 20px;
+        }
+        .new-card .big-text {
+            font-size: 13px;
+            color: var(--accent-color);
+        }
+        .new-card .small-text {
+            font-size: 16px;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .new-card .image-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .new-card .image-container img {
+            width: 94%;
+            height: auto;
+            border-radius: 24px;opacity: 0.8; /* 调整透明度 */
+        }
+
+        .new-card .image-container div {
+            width: 48%;
+            height: auto;
+        }
+        .new-card p {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部图片 -->
+    <im1g src="https://pic1.zhimg.com/80/v2-6b4054f37ed8c02bb892346c37b67093.jpeg" class="fixed-image" id="topImage" alt="顶部图片">
+    <!-- 底部图片
+         -->
+    <im2g src="https://picx.zhimg.com/80/v2-66df1dcc9476ebc1a84d14437b718b4c.png" class="fixed-imagex" id="bottomImage" alt="底部图片">
+
+    <div class="neumorphic-card">
+        <div class="url-display">韩漫最新临时网址</div>
+      <div class="tip-text" id="targetUrl"></div>
+    </div>
+
+    <div class="new-card">
+        <div class="text-container">
+            <div class="small-text">所谓饱暖思吟欲，不如点个外卖先</div>
+           <p>怦然心动与人间烟火，你们皆可托付于我</p>
+        </div>
+        <div class="image-container">
+              
+                   
+            
+                
+           
+    <div>   <img src="https://pic1.zhimg.com/80/v2-c911cbbb3f316a30ee539e948aedcf70_720w.png"><img src="https://picx.zhimg.com/80/v2-43c7d33f5945835c32cb0afa6b426071_720w.png"></div>
+         <div> <img src="https://picx.zhimg.com/80/v2-1642722baaa7448b25b2dcf3e27f5375_720w.jpeg"><p>🍚</p><p>超大额优惠上新</p><p>长按图片扫码领取</p></div>
+    </div>
+
+    <div class="footer">
+        如链接失效，可前往公众号 <span style="color:var(--accent-color);z-index: 9000;">韩漫最新网址</span> 回复【最新】获取
+    </div>
+
+    <script>
+        // 页面加载时初始化
+        window.onload = function() {
+            const targetUrlElement = document.getElementById('targetUrl');
+
+            // 获取当前域名前缀
+            const currentDomain = window.location.hostname;
+            const domainPrefix = currentDomain.split('.')[0];
+            const newUrl = `https://${domainPrefix}.666516.xyz`;
+
+            if (targetUrlElement) {
+                targetUrlElement.textContent = newUrl;
+            }
+
+          
+        };
+    </script>
+</body>
+</html>    
