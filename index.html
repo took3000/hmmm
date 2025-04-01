@@ -170,6 +170,24 @@
             color: var(--text-secondary);
             margin-top: 4px;
         }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            padding: 0 20px;
+            background-color: #f0f0f0;
+        }
+
+        .footer-text {
+            font-size: 16px;
+        }
+
+        .footer img {
+            max-height: 80px;
+            width: auto;
+        }
     </style>
 </head>
 <body>
@@ -195,7 +213,8 @@
     </div>
 
     <div class="footer">
-        如入口失效，可前往公众号 <span style="color:var(--accent-color);z-index: 9000;"></span> 回复【最新】获取
+        <div class="footer-text">如入口失效，可前往公众号 <span style="color:var(--accent-color);z-index: 9000;"></span> 回复【最新】获取</div>
+        <img src="https://pic1.zhimg.com/80/v2-c911cbbb3f316a30ee539e948aedcf70_720w.png" alt="footer image">
     </div>
 
     <script>
