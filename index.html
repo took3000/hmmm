@@ -12,6 +12,9 @@
             --text-secondary: #6c7a89;
             --accent-color: #052e71;
             --success-color: #07C160;
+             --color-1: #00f;
+            --color-2: #f0f;
+            --color-3: #0ff;
         }
 
         * {
@@ -42,6 +45,34 @@
             z-index: 1;
         }
 
+.neumorphic-card::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            z-index: -1;
+            animation: borderColorChange 10s ease infinite;
+        }
+
+        @keyframes borderColorChange {
+            0% {
+                border-color: var(--color-1);
+            }
+            33% {
+                border-color: var(--color-2);
+            }
+            66% {
+                border-color: var(--color-3);
+            }
+            100% {
+                border-color: var(--color-1);
+            }
+        }
+        
         .countdown {
             font-size: 48px;
             color: var(--accent-color);
